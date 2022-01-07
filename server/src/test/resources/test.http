@@ -1,0 +1,74 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/TingJuiBookstoreOrder/api/categories
+Accept: application/json
+
+###
+
+POST /TingJuiBookstoreOrder/api/orders HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:8081/
+Content-Type: application/json
+Origin: http://localhost:8081
+Content-Length: 1096
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+
+{
+  "cart": {
+    "items": [
+      {
+        "book": {
+          "description": "A Song of Life presents Diana Michener’s (born 1940) poignant photographs of animals taken in India, Paris and in various zoos throughout Europe and the USA.",
+          "categoryId": 1001,
+          "price": 4000,
+          "rating": 38,
+          "author": "Diana Michener",
+          "bookId": 1011,
+          "title": "A Song of Life",
+          "isFeatured": false,
+          "isPublic": false
+        },
+        "quantity": 1
+      },
+      {
+        "book": {
+          "description": "A photo book of Ali Marco Poros by SUPER LABO, an art photo book publisher with a book shop and gallery \"SUPER LABO STORE TOKYO\" in Jimbocho, Tokyo.A diaristic record of work, travel, and artistic collaboration, the book, like all of Marcopoulos’s work, bears witness to the present moment we are currently living through and its inescapable relationship to other time and places.",
+          "categoryId": 1001,
+          "price": 4500,
+          "rating": 40,
+          "author": "Ari Marcopoulos",
+          "bookId": 1012,
+          "title": "Denied",
+          "isFeatured": false,
+          "isPublic": false
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "jij7",
+    "address": "jiooijoi",
+    "phone": "202  71012--50",
+    "email": "tingjuih@vt.edu",
+    "ccNumber": "44443  332---2221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2021
+  }
+}
+
+###
+
